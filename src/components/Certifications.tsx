@@ -6,51 +6,44 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
 const certifications = [
   {
+    name: 'AWS Advanced CloudFormation: Macros',
+    issuer: 'Amazon Web Services (AWS)',
+    date: 'Jun 2025',
+    credentialId: '',
+  },
+  {
+    name: 'AWS Client VPN - Advanced Troubleshooting',
+    issuer: 'Amazon Web Services (AWS)',
+    date: 'Jun 2025',
+    credentialId: '',
+  },
+{
     name: 'Intel® Technical Pro Cloud DevOps (ADVANCED)',
-    issuer: 'Intel.com',
-    date: '2024',
+    issuer: 'Intel Corporation',
+    date: 'Apr 2025',
     credentialId: 'LP-E1L39V',
     link: 'https://learning.intel.com/certificate/LP-E1L39V',
+  }, 
+  {
+    name: 'AWS DevOps & Development Tools Services',
+    issuer: 'Amazon Web Services (AWS)',
+    date: 'Jun 2025',
+    credentialId: '',
   },
   {
-    name: 'IBM Ecosystem Cloud-Native Developer (Intermediate)',
-    issuer: 'IBM.com',
-    date: '2024',
-    credentialId: 'IBM-J2M4K6',
-    // link: 'https://training.ibm.com/certificate/IBM-J2M4K6',
-  },
+    name: 'Detect Host and Container Compromises with Workload Protection',
+    issuer: 'Datadog',
+    date: '2025',
+    credentialId: 'z8uc6bcy1a',
+  }, 
   {
-    name: 'AWS Certified Solutions Architect (Preparing)',
-    issuer: 'Amazon Web Services',
-    date: 'Preparing',
-    credentialId: 'AWS-L123H45',
+    name: 'LFS162: DevOps and Site Reliability Engineering',
+    issuer: 'The Linux Foundation',
+    date: '2025',
+    credentialId: 'LF60izqo93r7',
   },
-
-  // {
-  //   name: 'Google Cloud Professional Cloud Architect',
-  //   issuer: 'Google Cloud',
-  //   date: '2023',
-  //   credentialId: 'GCP-123456',
-  // },
-  // {
-  //   name: 'Certified Kubernetes Administrator (CKA)',
-  //   issuer: 'Cloud Native Computing Foundation',
-  //   date: '2023',
-  //   credentialId: 'CKA-123456',
-  // },
-  // {
-  //   name: 'Terraform Associate',
-  //   issuer: 'HashiCorp',
-  //   date: '2023',
-  //   credentialId: 'TF-123456',
-  // },
-  // {
-  //   name: 'Certified Information Systems Security Professional (CISSP)',
-  //   issuer: 'ISC²',
-  //   date: '2023',
-  //   credentialId: 'CISSP-123456',
-  // },
 ];
+
 
 export default function Certifications() {
   return (

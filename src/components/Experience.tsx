@@ -5,16 +5,45 @@ import { BriefcaseIcon } from '@heroicons/react/24/outline';
 
 const experiences = [
   {
+    title: 'Cloud DevOps Engineer Intern',
+    company: 'TechEazy Consulting',
+    period: 'Jun 2025 – Jul 2025',
+    location: 'Remote (India)',
+    responsibilities: [
+      'Automated infrastructure deployment using Terraform and AWS CloudFormation',
+      'Built and optimized CI/CD pipelines with GitHub Actions and AWS CodePipeline for faster delivery',
+      'Managed AWS resources including EC2, S3, Lambda, IAM, and RDS to support scalable systems',
+      'Containerized applications using Docker and deployed them via Amazon ECS',
+      'Monitored system health and performance using AWS CloudWatch and integrated logging with AWS CloudTrail and ELK Stack',
+      'Collaborated with DevOps teams to troubleshoot real-time infrastructure issues',
+      'Participated in Agile practices including daily standups and sprint ceremonies',
+      'Documented processes and built a knowledge base for future onboarding and operational efficiency',
+    ],
+  },
+  {
+    title: 'DevOps Engineer Intern',
+    company: 'Elevate Labs',
+    period: 'May 2025 – Jun 2025',
+    location: 'Remote (India)',
+    responsibilities: [
+      'Developed and maintained CI/CD pipelines using GitHub Actions and Jenkins for smooth deployments',
+      'Deployed Dockerized applications using Kubernetes on AWS infrastructure',
+      'Monitored system health with Prometheus and Grafana, reducing mean time to detect/resolution',
+      'Assisted in the implementation of IAM policies to enhance security',
+      'Worked cross-functionally with developers and security teams in Agile development cycles',
+    ],
+  },
+  {
     title: 'DevSecOps Architect',
     company: 'Upwork',
-    period: 'Oct 2023 – Present',
+    period: 'Oct 2024 – Feb 2025',
     location: 'Remote (Bhubaneswar, Odisha, India)',
     responsibilities: [
-      'Architected and delivered comprehensive DevSecOps pipelines and security-focused cloud-native solutions across diverse client projects',
-      'Designed and integrated secure CI/CD workflows with SAST, DAST, SCA, and container vulnerability scanning tools (Trivy, Gitleaks)',
-      'Implemented GitOps deployments using ArgoCD and FluxCD with Kubernetes admission controls (Kyverno, OPA Gatekeeper)',
-      'Automated policy enforcement, compliance-as-code, and security audits aligned with CIS Benchmarks and NIST standards',
-      'Integrated SOAR workflows to automate incident response, threat detection, and cloud-native SIEM monitoring (ELK, EFK)',
+      'Architected and delivered end-to-end DevSecOps pipelines and security-first cloud-native solutions for clients across various industries',
+      'Integrated SAST, DAST, SCA, and container scanning tools (Trivy, Gitleaks) into CI/CD pipelines for shift-left security',
+      'Implemented GitOps deployments using ArgoCD and FluxCD, with Kubernetes admission control via Kyverno and OPA Gatekeeper',
+      'Automated compliance checks and infrastructure security audits using CIS Benchmarks and NIST frameworks',
+      'Set up SOAR workflows for automated incident response, threat detection, and SIEM monitoring using ELK/EFK stacks',
     ],
   },
   {
@@ -23,11 +52,11 @@ const experiences = [
     period: 'Mar 2023 – Oct 2023',
     location: 'Remote (Bhubaneswar, Odisha, India)',
     responsibilities: [
-      'Designed, secured, and optimized cloud-native environments with a focus on Zero Trust architecture and GitOps automation',
-      'Deployed and hardened Kubernetes clusters with automated GitOps pipelines (ArgoCD, FluxCD) and real-time threat detection (Falco, Kyverno)',
-      'Automated multi-cloud infrastructure provisioning and scaling using Terraform, Helm, and Docker across AWS and GCP',
-      'Implemented centralized observability and logging using Prometheus, Grafana, Loki, and the EFK Stack',
-      'Established Policy-as-Code frameworks and automated compliance validation in line with CIS Benchmarks',
+      'Designed secure and scalable cloud-native environments using GitOps workflows and Zero Trust principles',
+      'Provisioned hardened Kubernetes clusters with automated deployment via ArgoCD/FluxCD and real-time threat detection (Falco, Kyverno)',
+      'Automated infrastructure across AWS and GCP using Terraform, Helm, and Docker',
+      'Set up centralized monitoring and observability with Prometheus, Grafana, Loki, and EFK Stack',
+      'Implemented Policy-as-Code using OPA and Kyverno, and enforced automated compliance validation',
     ],
   },
   {
@@ -36,14 +65,15 @@ const experiences = [
     period: 'Oct 2022 – Jan 2023',
     location: 'Bhubaneswar, Odisha, India',
     responsibilities: [
-      'Developed and maintained CI/CD pipelines to streamline build, test, and deployment processes',
-      'Automated infrastructure provisioning and configuration using Terraform and Infrastructure as Code best practices',
-      'Managed cloud resources, optimized performance, and reduced costs across multiple environments',
-      'Implemented robust security measures and ensured compliance with industry standards and regulatory requirements',
-      'Collaborated closely with development teams to define deployment strategies and improve release management',
+      'Built and managed CI/CD pipelines to automate build, test, and deployment phases',
+      'Provisioned infrastructure using Terraform and followed IaC best practices',
+      'Managed cloud environments for performance and cost optimization',
+      'Implemented security protocols and ensured regulatory compliance across systems',
+      'Collaborated with software engineers to streamline deployment workflows and release strategies',
     ],
   },
 ];
+
 
 export default function Experience() {
   return (

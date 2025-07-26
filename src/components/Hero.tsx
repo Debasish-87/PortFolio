@@ -39,7 +39,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <span className="inline-block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide text-blue-600 dark:text-blue-400">
-                Cloud DevSecOps Engineer
+                Cloud DevSecOps/SRE Engineer
               </span>
             </motion.div>
             
@@ -65,7 +65,7 @@ export default function Hero() {
                 Explore My Work
               </a>
               <a
-                href="/resume.pdf"
+                href="\resume\Debasish-resume.pdf"
                 download
                 className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 dark:border-gray-600 text-base sm:text-lg font-medium rounded-full text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"
               >

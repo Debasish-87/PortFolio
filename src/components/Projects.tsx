@@ -5,54 +5,55 @@ import { CodeBracketIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/
 
 const projects = [
   {
-    title: 'ZeroTrustOps - DevSecOps Pipeline',
-    description: 'Legendary DevSecOps platform for Kubernetes — CI/CD pipelines, GitOps workflows, and runtime security with Falco & Kyverno. Built to enable secure, automated, and resilient cloud-native deployments.',
+    title: 'ZeroTrustOps – DevSecOps Platform',
+    description: 'An end-to-end DevSecOps framework for Kubernetes environments, integrating CI/CD pipelines, GitOps workflows, and real-time runtime security with Falco and Kyverno. Built for secure, automated, and resilient cloud-native deployments.',
     technologies: ['Kubernetes', 'GitOps', 'Falco', 'Kyverno', 'CI/CD'],
     image: '/projects/zerotrustops.jpg',
     github: 'https://github.com/Debasish-87/ZeroTrustOps-Platform',
     live: 'https://zerotrustops-demo.com',
   },
   {
-    title: 'ScareCrow',
-    description: 'AI-powered Paddy Disease Detection system leveraging deep learning with CNN and Google Cloud Vision API, built using Flask for real-time prediction and recommendation.',
-    technologies: ['Flask', 'CNN', 'Google Cloud', 'Python'],
+    title: 'GitOpsFlow – Kubernetes Auto CD',
+    description: 'A GitOps-based continuous deployment pipeline using ArgoCD and Kustomize. This project automates the deployment of containerized static applications from GitHub with features like auto-sync, version control, and one-click bootstrap for test and production environments.',
+    technologies: ['Docker', 'Kubernetes (Minikube)', 'ArgoCD', 'GitHub', 'Kustomize', 'Bash'],
     image: '/projects/scarecrow.jpg',
-    github: 'https://github.com/Debasish-87/ScareCrow',
+    github: 'https://github.com/Debasish-87/GitOpsFlow-Kubernetes-AutoCD',
     live: 'https://scarecrow-ai-demo.com',
   },
   {
-    title: 'PII Protection',
-    description: 'Secure web system for detecting and encrypting Personally Identifiable Information (PII) using OCR and AES-256 encryption, built with Django.',
-    technologies: ['Django', 'OCR', 'AES-256', 'Python'],
-    image: '/projects/pii-protection.jpg',
+    title: 'K3s + Istio Canary Deployment',
+    description: 'Demonstrates intelligent traffic splitting between two microservice versions using K3s (lightweight Kubernetes) and Istio service mesh. Includes observability tooling with Grafana, Prometheus, Jaeger, and Kiali for monitoring and tracing.',
+    technologies: ['Docker', 'Kubernetes (K3s)', 'ArgoCD', 'GitHub', 'Istio', 'Grafana', 'Prometheus', 'Kiali', 'Jaeger', 'Node.js', 'kubectl'],
+    image: '/projects/scarecrow.jpg',
+    github: 'https://github.com/Debasish-87/k3s-istio-canary-deployment',
+    live: 'https://scarecrow-ai-demo.com',
+  },
+  {
+    title: 'Terraform AWS EC2 CI/CD Deployment',
+    description: 'A fully automated DevOps infrastructure project using Terraform and GitHub Actions to deploy a Spring Boot application on AWS EC2. Includes secure IAM configuration, environment-specific variables, S3 log storage, and automatic instance shutdown for cost control.',
+    technologies: ['Terraform', 'AWS EC2', 'GitHub Actions', 'AWS S3', 'Shell Script', 'Java', 'Spring Boot', 'Postman', 'IAM', 'CI/CD', 'VPC'],
+    image: '/projects/aws-devops.jpg',
+    github: 'https://github.com/Debasish-87/tech_eazy_Debasish-87_aws_internship',
+    live: '',
+  },
+  {
+    title: 'Complete Observability System',
+    description: 'A production-grade observability stack using Docker Compose to monitor a Python Flask app. Includes Prometheus for metrics, Loki and Promtail for centralized logging, Jaeger for distributed tracing, and Grafana for unified visualization.',
+    technologies: ['Docker', 'Docker Compose', 'Flask', 'Prometheus', 'Loki', 'Promtail', 'Jaeger', 'Grafana', 'Python'],
+    image: '/projects/observability-dashboard.jpg',
+    github: 'https://github.com/Debasish-87/complete-observability-system',
+    live: '',
+  },
+  {
+    title: 'PII Protect System',
+    description: 'A secure web application that detects and masks Personally Identifiable Information (PII) from uploaded images using OCR and AES encryption. Features manager-level access control, encrypted blob storage, and full compliance with data protection standards.',
+    technologies: ['Django', 'Node.js', 'MySQL', 'Tesseract OCR', 'AES Encryption', 'HTML', 'CSS', 'JavaScript', 'Blob Storage'],
+    image: '/projects/pii-protect.jpg',
     github: 'https://github.com/Debasish-87/pii-protection',
-    live: 'https://pii-protection-demo.com',
-  },
-  {
-    title: 'Big-Mart Sales Prediction',
-    description: 'Forecasting Big-Mart sales using historical data and machine learning models with features such as product type, store location, and seasonal trends.',
-    technologies: ['Python', 'Pandas', 'Scikit-learn', 'Jupyter Notebook'],
-    image: '/projects/bigmart-sales.jpg',
-    github: 'https://github.com/Debasish-87/Big-Mart-Sales-Prediction',
-    live: 'https://bigmart-predictor-demo.com',
-  },
-  {
-    title: 'Cloud Infrastructure Automation',
-    description: 'Automated cloud infrastructure deployment using Terraform and AWS services, implementing security best practices and cost optimization.',
-    technologies: ['AWS', 'Terraform', 'Docker', 'Kubernetes'],
-    image: '/projects/cloud-infra.jpg',
-    github: 'https://github.com/username/cloud-infra',
-    live: 'https://cloud-infra-demo.com',
-  },
-  {
-    title: 'Kubernetes Security Platform',
-    description: 'Developed a security platform for Kubernetes clusters with runtime security monitoring and policy enforcement.',
-    technologies: ['Kubernetes', 'Falco', 'OPA', 'Prometheus'],
-    image: '/projects/k8s-security.jpg',
-    github: 'https://github.com/username/k8s-security',
-    live: 'https://k8s-security-demo.com',
-  },
+    live: '',
+  }
 ];
+
 
 export default function Projects() {
   return (
