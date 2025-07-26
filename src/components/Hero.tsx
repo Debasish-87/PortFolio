@@ -27,7 +27,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Hi, I'm{' '}
+              Hi, I&apos;m{' '}
               <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
                 Debasish Mohanty
               </span>
