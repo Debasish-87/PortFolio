@@ -65,7 +65,7 @@ export default function Contact() {
                   Phone
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  +91 6370444819
+                  +91 6372692682
                 </p>
               </div>
             </div>
