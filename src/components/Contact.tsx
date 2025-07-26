@@ -13,7 +13,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     console.log('Form submitted:', formData);
   };
 
@@ -31,7 +30,7 @@ export default function Contact() {
             Get in Touch
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Let's discuss how I can help with your cloud infrastructure needs
+            Let&apos;s discuss how I can help with your cloud infrastructure needs
           </p>
         </motion.div>
 
@@ -144,4 +143,4 @@ export default function Contact() {
       </div>
     </section>
   );
-} 
+}

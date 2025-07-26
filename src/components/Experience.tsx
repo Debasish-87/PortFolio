@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { BriefcaseIcon } from '@heroicons/react/24/outline';
 
 const experiences = [
   {
@@ -74,7 +73,6 @@ const experiences = [
   },
 ];
 
-
 export default function Experience() {
   return (
     <section id="experience" className="py-20 bg-white dark:bg-black">
@@ -135,4 +133,4 @@ export default function Experience() {
       </div>
     </section>
   );
-} 
+}

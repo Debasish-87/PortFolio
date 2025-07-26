@@ -21,7 +21,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="space-y-6 sm:space-y-8"
           >
-            <motion.h1 
+            <motion.h1
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function Hero() {
                 Cloud DevSecOps/SRE Engineer
               </span>
             </motion.div>
-            
+
             <motion.p
               className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-4"
               initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ export default function Hero() {
                 Explore My Work
               </a>
               <a
-                href="\resume\Debasish-resume.pdf"
+                href="/resume/Debasish-resume.pdf"
                 download
                 className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 dark:border-gray-600 text-base sm:text-lg font-medium rounded-full text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"
               >
@@ -92,4 +92,4 @@ export default function Hero() {
       </motion.div>
     </section>
   );
-} 
+}

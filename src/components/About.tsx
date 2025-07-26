@@ -1,34 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { CodeBracketIcon } from '@heroicons/react/24/outline';
+// Removed unused: import { CodeBracketIcon } from '@heroicons/react/24/outline';
+// Removed unused: const expertise = [...]
 
-const expertise = [
-  {
-    name: 'Cloud Architecture',
-    icon: CodeBracketIcon,
-    color: 'from-blue-500 to-blue-600',
-    darkColor: 'from-blue-400 to-blue-500',
-  },
-  {
-    name: 'DevOps Automation',
-    icon: CodeBracketIcon,
-    color: 'from-blue-500 to-blue-600',
-    darkColor: 'from-blue-400 to-blue-500',
-  },
-  {
-    name: 'Security Implementation',
-    icon: CodeBracketIcon,
-    color: 'from-blue-500 to-blue-600',
-    darkColor: 'from-blue-400 to-blue-500',
-  },
-  {
-    name: 'Infrastructure as Code',
-    icon: CodeBracketIcon,
-    color: 'from-blue-500 to-blue-600',
-    darkColor: 'from-blue-400 to-blue-500',
-  },
-];
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -58,10 +34,12 @@ export default function About() {
             className="relative"
           >
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 flex items-center justify-center shadow-xl">
-              <img
-                src="\img\Debasish.jpeg"
+              <Image
+                src="/img/Debasish.jpeg"
                 alt="Profile"
-                className="w-full h-full object-cover"
+                width={256}
+                height={256}
+                className="object-cover"
               />
             </div>
             <div className="absolute -top-4 -right-4 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
@@ -76,17 +54,17 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-            I'm a results-driven Cloud DevSecOps Engineer with 3+ years of experience designing secure, scalable, and automated cloud infrastructure. I specialize in Zero Trust architecture, GitOps pipelines, and runtime threat detection.
+              I&apos;m a results-driven Cloud DevSecOps Engineer with 3+ years of experience designing secure, scalable, and automated cloud infrastructure. I specialize in Zero Trust architecture, GitOps pipelines, and runtime threat detection.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-            Skilled across AWS, Azure, and GCP, I work with tools like ArgoCD, Kyverno, Terraform, and Kubernetes to build resilient, policy-driven cloud-native systems. Passionate about cloud security, observability, and secure-by-design engineering, I create systems that are compliant with CIS and NIST frameworks.
+              Skilled across AWS, Azure, and GCP, I work with tools like ArgoCD, Kyverno, Terraform, and Kubernetes to build resilient, policy-driven cloud-native systems. Passionate about cloud security, observability, and secure-by-design engineering, I create systems that are compliant with CIS and NIST frameworks.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-            Let’s build secure infrastructure that scales.
+              Let&apos;s build secure infrastructure that scales.
             </p>
           </motion.div>
         </div>
       </div>
     </section>
   );
-} 
+}
