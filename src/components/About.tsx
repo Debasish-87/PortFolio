@@ -54,7 +54,7 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I&apos;m a results-driven Cloud DevSecOps Engineer with 1+ years of experience designing secure, scalable, and automated cloud infrastructure. I specialize in Zero Trust architecture, GitOps pipelines, and runtime threat detection.
+              I&apos;m a results-driven Cloud DevSecOps Engineer with 2+ years of experience designing secure, scalable, and automated cloud infrastructure. I specialize in Zero Trust architecture, GitOps pipelines, and runtime threat detection.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Skilled across AWS, Azure, and GCP, I work with tools like ArgoCD, Kyverno, Terraform, and Kubernetes to build resilient, policy-driven cloud-native systems. Passionate about cloud security, observability, and secure-by-design engineering, I create systems that are compliant with CIS and NIST frameworks.
