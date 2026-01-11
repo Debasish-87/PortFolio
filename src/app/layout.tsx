@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Cloud DevSecOps Engineer Portfolio",
+  title: "SDET / Quality Engineer Portfolio",
   description: "Professional portfolio showcasing cloud, DevOps, and security expertise",
 };
 
