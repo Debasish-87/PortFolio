@@ -4,71 +4,45 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'Cloud DevOps Engineer Intern',
+    title: 'AWS Cloud DevOps Engineer (Contract / Internship)',
     company: 'TechEazy Consulting',
     period: 'Jun 2025 – Jul 2025',
     location: 'Remote (India)',
     responsibilities: [
-      'Automated infrastructure deployment using Terraform and AWS CloudFormation',
-      'Built and optimized CI/CD pipelines with GitHub Actions and AWS CodePipeline for faster delivery',
-      'Managed AWS resources including EC2, S3, Lambda, IAM, and RDS to support scalable systems',
-      'Containerized applications using Docker and deployed them via Amazon ECS',
-      'Monitored system health and performance using AWS CloudWatch and integrated logging with AWS CloudTrail and ELK Stack',
-      'Collaborated with DevOps teams to troubleshoot real-time infrastructure issues',
-      'Participated in Agile practices including daily standups and sprint ceremonies',
-      'Documented processes and built a knowledge base for future onboarding and operational efficiency',
+      'Supported CI/CD pipelines using GitHub Actions and AWS CodePipeline with focus on automation readiness and stability',
+      'Assisted in Infrastructure as Code (IaC) using Terraform and AWS CloudFormation to enable repeatable test environments',
+      'Validated deployments across AWS services (EC2, S3, IAM, Lambda, RDS) from a quality and reliability perspective',
+      'Enabled containerized application execution using Docker and Amazon ECS to support automated testing',
+      'Monitored pipeline execution, environment health, and failures using CloudWatch, CloudTrail, and ELK Stack',
+      'Collaborated with DevOps and QA teams to identify deployment risks impacting test execution and releases',
+      'Documented CI/CD workflows, environment setup, and quality checks for reuse and onboarding',
     ],
   },
   {
-    title: 'DevOps Engineer Intern',
+    title: 'DevOps Automation Engineer (Contract / Internship)',
     company: 'Elevate Labs',
     period: 'May 2025 – Jun 2025',
     location: 'Remote (India)',
     responsibilities: [
-      'Developed and maintained CI/CD pipelines using GitHub Actions and Jenkins for smooth deployments',
-      'Deployed Dockerized applications using Kubernetes on AWS infrastructure',
-      'Monitored system health with Prometheus and Grafana, reducing mean time to detect/resolution',
-      'Assisted in the implementation of IAM policies to enhance security',
-      'Worked cross-functionally with developers and security teams in Agile development cycles',
+      'Developed and maintained CI/CD pipelines using GitHub Actions and Jenkins with automation integration',
+      'Deployed Dockerized applications on Kubernetes (AWS) to support QA and test execution workflows',
+      'Used Prometheus and Grafana to analyze failures and improve observability for automated runs',
+      'Assisted in validating IAM configurations and security-sensitive workflows impacting QA environments',
+      'Worked closely with developers and QA engineers to improve deployment reliability and release confidence',
+      'Participated in Agile ceremonies aligning automation, testing, and deployment timelines',
     ],
   },
   {
-    title: 'DevSecOps Architect',
+    title: 'SDET / Quality Engineer',
     company: 'Upwork',
     period: 'Oct 2024 – Feb 2025',
-    location: 'Remote (Bhubaneswar, Odisha, India)',
+    location: 'Remote (India)',
     responsibilities: [
-      'Architected and delivered end-to-end DevSecOps pipelines and security-first cloud-native solutions for clients across various industries',
-      'Integrated SAST, DAST, SCA, and container scanning tools (Trivy, Gitleaks) into CI/CD pipelines for shift-left security',
-      'Implemented GitOps deployments using ArgoCD and FluxCD, with Kubernetes admission control via Kyverno and OPA Gatekeeper',
-      'Automated compliance checks and infrastructure security audits using CIS Benchmarks and NIST frameworks',
-      'Set up SOAR workflows for automated incident response, threat detection, and SIEM monitoring using ELK/EFK stacks',
-    ],
-  },
-  {
-    title: 'Cloud-Native Security Engineer',
-    company: 'Upwork',
-    period: 'Mar 2023 – Oct 2023',
-    location: 'Remote (Bhubaneswar, Odisha, India)',
-    responsibilities: [
-      'Designed secure and scalable cloud-native environments using GitOps workflows and Zero Trust principles',
-      'Provisioned hardened Kubernetes clusters with automated deployment via ArgoCD/FluxCD and real-time threat detection (Falco, Kyverno)',
-      'Automated infrastructure across AWS and GCP using Terraform, Helm, and Docker',
-      'Set up centralized monitoring and observability with Prometheus, Grafana, Loki, and EFK Stack',
-      'Implemented Policy-as-Code using OPA and Kyverno, and enforced automated compliance validation',
-    ],
-  },
-  {
-    title: 'Cloud DevOps Engineer',
-    company: 'Independent Project Contractor',
-    period: 'Oct 2022 – Jan 2023',
-    location: 'Bhubaneswar, Odisha, India',
-    responsibilities: [
-      'Built and managed CI/CD pipelines to automate build, test, and deployment phases',
-      'Provisioned infrastructure using Terraform and followed IaC best practices',
-      'Managed cloud environments for performance and cost optimization',
-      'Implemented security protocols and ensured regulatory compliance across systems',
-      'Collaborated with software engineers to streamline deployment workflows and release strategies',
+      'Designed CI/CD-driven automation strategies for cloud-native client applications',
+      'Built Quality Intelligence systems converting UI, API, and pipeline execution into release-readiness signals',
+      'Integrated automation frameworks with GitHub Actions, Jenkins, and GitOps workflows',
+      'Implemented risk-based testing, quality gates, and early defect containment',
+      'Partnered with clients to improve release confidence, stability, and predictability',
     ],
   },
 ];
@@ -88,7 +62,8 @@ export default function Experience() {
             Professional Experience
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            My journey in cloud and DevOps engineering
+            Cloud DevOps, automation, and SDET experience focused on CI/CD quality
+            and cloud-native release confidence
           </p>
         </motion.div>
 
@@ -116,6 +91,7 @@ export default function Experience() {
                   <p className="text-gray-500 dark:text-gray-400">{exp.location}</p>
                 </div>
               </div>
+
               <ul className="space-y-2">
                 {exp.responsibilities.map((responsibility, idx) => (
                   <li
