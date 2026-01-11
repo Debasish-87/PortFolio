@@ -62,8 +62,8 @@ export default function Experience() {
             Professional Experience
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Cloud DevOps, automation, and SDET experience focused on CI/CD quality
-            and cloud-native release confidence
+            Cloud DevOps and SDET experience focused on CI/CD-driven quality,
+            automation enablement, and cloud-native release confidence
           </p>
         </motion.div>
 
