@@ -100,7 +100,7 @@ export default function Skills() {
             Skills & Expertise
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Comprehensive set of skills in cloud, DevOps, and security
+            Comprehensive expertise in test automation, CI/CD quality engineering, and cloud-native QA platforms
           </p>
         </motion.div>
 
