@@ -127,8 +127,8 @@ export default function Projects() {
             Projects
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Engineering Quality Intelligence platforms, CI/CD automation,
-            and cloud-native systems where release confidence matters
+            Production-grade Quality Intelligence platforms and CI/CD automation systems
+            designed to enable predictable, release-ready cloud-native software.
           </p>
         </motion.div>
 
