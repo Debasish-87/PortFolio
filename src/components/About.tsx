@@ -22,7 +22,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A Cloud DevSecOps Engineer with expertise in designing secure, scalable, and automated cloud infrastructure
+            An SDET and Quality Engineer specializing in Quality Intelligence for CI/CD-driven, cloud-native systems.
           </p>
         </motion.div>
 
@@ -55,13 +55,19 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I&apos;m a results-driven Cloud DevSecOps Engineer with 2+ years of experience designing secure, scalable, and automated cloud infrastructure. I specialize in Zero Trust architecture, GitOps pipelines, and runtime threat detection.
+              I’m a results-driven SDET / Quality Engineer with 2+ years of experience designing automation frameworks and Quality Intelligence platforms for cloud-native applications.            
             </p>
+            
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Skilled across AWS, Azure, and GCP, I work with tools like ArgoCD, Kyverno, Terraform, and Kubernetes to build resilient, policy-driven cloud-native systems. Passionate about cloud security, observability, and secure-by-design engineering, I create systems that are compliant with CIS and NIST frameworks.
+              I specialize in building UI, API, and CI/CD automation systems that convert test execution data into actionable release confidence using risk-based testing, early defect containment, and quality gates.            
             </p>
+            
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Let&apos;s build secure infrastructure that scales.
+              Working across Selenium, RestAssured, TestNG, Allure, GitHub Actions, Kubernetes, and AWS, I embed quality signals directly into CI/CD pipelines — ensuring quality is engineered, not validated as a final phase.
+            </p>
+            
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Let’s build platforms where release confidence matters.
             </p>
           </motion.div>
         </div>
