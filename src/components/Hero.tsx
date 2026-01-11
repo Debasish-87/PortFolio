@@ -39,7 +39,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <span className="inline-block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide text-blue-600 dark:text-blue-400">
-                Cloud DevSecOps/SRE Engineer
+                SDET / Quality Engineer
               </span>
             </motion.div>
 
@@ -49,7 +49,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Transforming cloud infrastructure with security-first approach and automated solutions
+              Quality Intelligence for CI/CD-Driven Automation in Cloud-Native QA
             </motion.p>
 
             <motion.div
