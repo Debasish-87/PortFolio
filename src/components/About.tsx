@@ -35,7 +35,7 @@ export default function About() {
           >
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 flex items-center justify-center shadow-xl">
               <Image
-                src="/img/Debasish.jpeg"
+                src="/img/debasishpic.jpeg"
                 alt="Profile"
                 width={256}
                 height={256}
