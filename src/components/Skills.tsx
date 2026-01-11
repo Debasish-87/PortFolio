@@ -11,78 +11,79 @@ import {
 
 const skills = [
   {
-    category: 'Cloud Platforms',
-    description: 'Expertise in major cloud providers',
-    icon: ServerIcon,
-    items: [
-      { name: 'AWS', level: 90 },
-      { name: 'Azure', level: 85 },
-      { name: 'GCP', level: 80 },
-      { name: 'Cloud Architecture', level: 90 },
-      { name: 'Serverless', level: 85 },
-    ],
-  },
-  {
-    category: 'DevOps',
-    description: 'Automation and CI/CD',
-    icon: CommandLineIcon,
-    items: [
-      { name: 'Docker', level: 90 },
-      { name: 'Kubernetes', level: 85 },
-      { name: 'Terraform', level: 90 },
-      { name: 'GitLab CI', level: 85 },
-      { name: 'Jenkins', level: 80 },
-    ],
-  },
-  {
-    category: 'Security',
-    description: 'Security implementation and compliance',
-    icon: ShieldCheckIcon,
-    items: [
-      { name: 'Security Best Practices', level: 90 },
-      { name: 'Compliance', level: 85 },
-      { name: 'IAM', level: 90 },
-      { name: 'Network Security', level: 85 },
-      { name: 'Security Tools', level: 80 },
-    ],
-  },
-  {
-    category: 'Programming',
-    description: 'Languages and frameworks',
-    icon: CodeBracketIcon,
-    items: [
-      { name: 'Python', level: 90 },
-      { name: 'Bash', level: 85 },
-      { name: 'YAML', level: 90 },
-      { name: 'JSON', level: 85 },
-      { name: 'HCL', level: 80 },
-    ],
-  },
-  {
-    category: 'Monitoring',
-    description: 'Observability and performance tracking',
-    icon: CommandLineIcon,
-    items: [
-      { name: 'Prometheus', level: 80 },
-      { name: 'Grafana', level: 85 },
-      { name: 'ELK Stack', level: 75 },
-      { name: 'CloudWatch', level: 85 },
-      { name: 'Alerting Systems', level: 80 },
-    ],
-  },
-  {
-    category: 'Testing',
-    description: 'Quality assurance and testing',
+    category: 'Test Automation & Quality Intelligence',
+    description: 'Engineering automation frameworks and release-quality signals',
     icon: WrenchScrewdriverIcon,
     items: [
-      { name: 'Automated Testing', level: 80 },
-      { name: 'Security Testing', level: 85 },
-      { name: 'Performance Testing', level: 75 },
-      { name: 'Test Automation', level: 80 },
-      { name: 'Quality Gates', level: 85 },
+      { name: 'UI Automation (Selenium)', level: 90 },
+      { name: 'API Automation (RestAssured)', level: 90 },
+      { name: 'TestNG Framework Design', level: 85 },
+      { name: 'Allure Reporting & Test Intelligence', level: 90 },
+      { name: 'Risk-Based Testing & Quality Gates', level: 85 },
+    ],
+  },
+  {
+    category: 'CI/CD & Release Engineering',
+    description: 'CI/CD-driven automation and release confidence',
+    icon: CommandLineIcon,
+    items: [
+      { name: 'GitHub Actions', level: 90 },
+      { name: 'Jenkins', level: 85 },
+      { name: 'CI/CD Test Orchestration', level: 90 },
+      { name: 'Release Readiness Signals', level: 85 },
+      { name: 'Pipeline Failure Analysis', level: 80 },
+    ],
+  },
+  {
+    category: 'Cloud-Native QA',
+    description: 'Automation infrastructure for cloud-native platforms',
+    icon: ServerIcon,
+    items: [
+      { name: 'Docker', level: 90 },
+      { name: 'Kubernetes / K3s', level: 85 },
+      { name: 'AWS (EC2, S3, IAM)', level: 85 },
+      { name: 'Test Environment Provisioning', level: 80 },
+      { name: 'Cloud-Native Test Execution', level: 85 },
+    ],
+  },
+  {
+    category: 'Observability & Test Signals',
+    description: 'Execution visibility and quality signal analysis',
+    icon: CommandLineIcon,
+    items: [
+      { name: 'Test Execution Visibility', level: 85 },
+      { name: 'Failure Pattern Analysis', level: 80 },
+      { name: 'Pipeline Health Metrics', level: 85 },
+      { name: 'Prometheus & Grafana (Basics)', level: 75 },
+      { name: 'Log-Based Debugging', level: 80 },
+    ],
+  },
+  {
+    category: 'Programming & Automation',
+    description: 'Languages and scripting for automation frameworks',
+    icon: CodeBracketIcon,
+    items: [
+      { name: 'Java', level: 90 },
+      { name: 'Python', level: 85 },
+      { name: 'Bash / Shell Scripting', level: 85 },
+      { name: 'YAML & JSON', level: 90 },
+      { name: 'Framework Utilities & Helpers', level: 80 },
+    ],
+  },
+  {
+    category: 'DevSecOps & Quality Enablement',
+    description: 'Security-aware automation and policy-driven quality',
+    icon: ShieldCheckIcon,
+    items: [
+      { name: 'Security-Aware Test Design', level: 85 },
+      { name: 'Policy-Aware Pipelines', level: 80 },
+      { name: 'Shift-Left Testing Practices', level: 85 },
+      { name: 'Environment Validation', level: 80 },
+      { name: 'Release Compliance Checks', level: 75 },
     ],
   },
 ];
+
 
 export default function Skills() {
   return (
