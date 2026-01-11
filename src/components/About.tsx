@@ -55,7 +55,7 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I’m a results-driven SDET / Quality Engineer with 2+ years of experience designing automation frameworks and Quality Intelligence platforms for cloud-native applications.            
+              I’m a results-driven SDET / Quality Engineer with 1+ years of experience designing automation frameworks and Quality Intelligence platforms for cloud-native applications.            
             </p>
             
             <p className="text-lg text-gray-600 dark:text-gray-300">
