@@ -1,5 +1,6 @@
 'use client';
 
+
 import { motion } from 'framer-motion';
 // Removed unused: import { CodeBracketIcon } from '@heroicons/react/24/outline';
 // Removed unused: const expertise = [...]
