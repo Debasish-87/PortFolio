@@ -53,7 +53,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Building runtime security systems and CI/CD enforcement platforms that detect and stop threats at the syscall level.
+            I build systems that intercept, detect, and stop threats at the syscall level — before they execute.
           </motion.p>
 
           {/* 🔥 CREDIBILITY */}
