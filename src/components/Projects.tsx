@@ -10,7 +10,8 @@ const projects = [
   {
     title: 'KubeRTSec — Kubernetes Runtime Security Platform',
     description:
-      'eBPF-powered runtime security system for Kubernetes that intercepts execve syscalls to detect and stop threats (reverse shells, crypto miners, container escapes) in real time. Includes rule engine, enforcement (SIGKILL), WebSocket alerts, and full observability stack.',
+      'eBPF-powered runtime security system that intercepts execve syscalls to detect and terminate threats (reverse shells, crypto miners, container escapes) in real time.',
+    impact: 'Sub-ms syscall interception · Real-time threat termination',
     technologies: [
       'Go',
       'eBPF',
@@ -28,7 +29,8 @@ const projects = [
   {
     title: 'ZeroTrustOps — CI/CD Security Enforcement Platform',
     description:
-      'Self-hosted DevSecOps platform that scans every Git push and blocks insecure infrastructure before deployment. Built with custom SecTL engine, enforcing policy-based CI/CD gates with real-time feedback, secrets detection, and IaC scanning.',
+      'Policy-driven CI/CD enforcement system that scans every commit and blocks insecure infrastructure before deployment using custom SecTL engine.',
+    impact: 'Pre-deployment security enforcement · Commit-time validation',
     technologies: [
       'Go',
       'Python',
@@ -46,7 +48,8 @@ const projects = [
   {
     title: 'K3s + Istio Canary Deployment System',
     description:
-      'Cloud-native deployment system using K3s and Istio to implement traffic-splitting canary releases with full observability. Includes Prometheus, Grafana, Jaeger, and Kiali for real-time traffic analysis and release validation.',
+      'Cloud-native deployment system implementing traffic-splitting canary releases with full observability and real-time validation.',
+    impact: 'Controlled traffic shifting · Observability-driven release validation',
     technologies: [
       'Kubernetes (K3s)',
       'Istio',
@@ -83,49 +86,50 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        {/* PROJECT GRID */}
+        {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.03, y: -5 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               
               {/* IMAGE */}
-              <div className="h-48 w-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
-                {project.image ? (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="flex items-center justify-center h-full">
-                    <CodeBracketIcon className="h-12 w-12 text-gray-400" />
-                  </div>
-                )}
+              <div className="h-48 w-full overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
               </div>
 
               {/* CONTENT */}
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <div className="p-6 space-y-4">
+                
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   {project.description}
                 </p>
 
+                {/* 🔥 IMPACT */}
+                <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                  {project.impact}
+                </p>
+
                 {/* TECH */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full"
+                      className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full"
                     >
                       {tech}
                     </span>
@@ -133,7 +137,7 @@ export default function Projects() {
                 </div>
 
                 {/* LINKS */}
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 pt-2">
                   <a
                     href={project.github}
                     target="_blank"
@@ -156,8 +160,8 @@ export default function Projects() {
                     </a>
                   )}
                 </div>
-              </div>
 
+              </div>
             </motion.div>
           ))}
         </div>
