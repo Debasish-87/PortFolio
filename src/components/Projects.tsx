@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import {
   CodeBracketIcon,
+  ArrowTopRightOnSquareIcon,
 } from '@heroicons/react/24/outline';
 
 const projects = [
@@ -21,6 +22,8 @@ const projects = [
       'Jaeger',
     ],
     github: 'https://github.com/Debasish-87/kubertsec',
+    live: 'https://kubertsec.vercel.app/',
+    image: '/projects/kubertsec.png',
   },
   {
     title: 'ZeroTrustOps — CI/CD Security Enforcement Platform',
@@ -37,6 +40,8 @@ const projects = [
       'Gitleaks',
     ],
     github: 'https://github.com/Debasish-87/ZeroTrustOps-Platform',
+    live: 'https://debasish-87.github.io/ZeroTrustOps-Platform/',
+    image: '/projects/zerotrustops.png',
   },
   {
     title: 'K3s + Istio Canary Deployment System',
@@ -53,6 +58,7 @@ const projects = [
     ],
     github:
       'https://github.com/Debasish-87/k3s-istio-canary-deployment',
+    image: '/projects/istio.png',
   },
 ];
 
@@ -61,6 +67,7 @@ export default function Projects() {
     <section id="projects" className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
+        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -76,6 +83,7 @@ export default function Projects() {
           </p>
         </motion.div>
 
+        {/* PROJECT GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
@@ -84,40 +92,72 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="flex items-center justify-center h-20 mb-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg">
-                <CodeBracketIcon className="h-10 w-10 text-white" />
+              
+              {/* IMAGE */}
+              <div className="h-48 w-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="flex items-center justify-center h-full">
+                    <CodeBracketIcon className="h-12 w-12 text-gray-400" />
+                  </div>
+                )}
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                {project.title}
-              </h3>
+              {/* CONTENT */}
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  {project.title}
+                </h3>
 
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                {project.description}
-              </p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  {project.description}
+                </p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full"
+                {/* TECH */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* LINKS */}
+                <div className="flex space-x-4">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700"
                   >
-                    {tech}
-                  </span>
-                ))}
+                    <CodeBracketIcon className="h-5 w-5 mr-2" />
+                    Code
+                  </a>
+
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-green-600 dark:text-green-400 hover:text-green-700"
+                    >
+                      <ArrowTopRightOnSquareIcon className="h-5 w-5 mr-2" />
+                      Live
+                    </a>
+                  )}
+                </div>
               </div>
 
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
-              >
-                <CodeBracketIcon className="h-5 w-5 mr-2" />
-                View Code
-              </a>
             </motion.div>
           ))}
         </div>
