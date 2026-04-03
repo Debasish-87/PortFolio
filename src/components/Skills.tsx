@@ -1,86 +1,80 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { 
-  CodeBracketIcon, 
-  ServerIcon, 
+import {
+  CodeBracketIcon,
+  ServerIcon,
   ShieldCheckIcon,
   CommandLineIcon,
   WrenchScrewdriverIcon,
-  ChartBarIcon
+  ChartBarIcon,
 } from '@heroicons/react/24/outline';
 
 const skills = [
   {
     category: 'Security & Enforcement Systems',
-    description: 'Building systems that enforce decisions across CI/CD and runtime',
+    description: 'Systems that intercept, validate, and enforce decisions across CI/CD and runtime',
     icon: ShieldCheckIcon,
     items: [
-      { name: 'CI/CD Enforcement Systems' },
-      { name: 'Runtime Security (eBPF)' },
-      { name: 'Syscall Interception & Process Control' },
-      { name: 'Policy-Based Decision Engines' },
-      { name: 'Release Governance Systems' },
+      'Runtime Security (eBPF)',
+      'Syscall Interception',
+      'CI/CD Enforcement Systems',
+      'Policy Decision Engines',
     ],
   },
   {
-    category: 'Kubernetes & Cloud-Native Infrastructure',
-    description: 'Designing and operating containerized distributed systems',
+    category: 'Kubernetes & Cloud Infrastructure',
+    description: 'Container orchestration, networking, and infrastructure automation',
     icon: ServerIcon,
     items: [
-      { name: 'Kubernetes (K3s, Minikube)' },
-      { name: 'Docker & Container Systems' },
-      { name: 'Service Mesh (Istio)' },
-      { name: 'AWS (EC2, S3, IAM)' },
-      { name: 'Infrastructure as Code (Terraform)' },
+      'Kubernetes (K3s, Minikube)',
+      'Docker',
+      'Istio (Service Mesh)',
+      'Terraform',
     ],
   },
   {
-    category: 'CI/CD & DevSecOps Enforcement',
-    description: 'Automated pipelines with embedded security and deployment control',
+    category: 'CI/CD & DevSecOps',
+    description: 'Automated pipelines with embedded validation and security gates',
     icon: CommandLineIcon,
     items: [
-      { name: 'GitHub Actions' },
-      { name: 'Jenkins' },
-      { name: 'GitOps (ArgoCD)' },
-      { name: 'IaC & Security Scanning (Trivy, Gitleaks)' },
-      { name: 'Deployment Gates & Policy Enforcement' },
+      'GitHub Actions',
+      'Jenkins',
+      'ArgoCD (GitOps)',
+      'Trivy · Gitleaks',
     ],
   },
   {
-    category: 'Runtime Observability & Systems Insight',
-    description: 'Monitoring, tracing, and debugging distributed systems',
+    category: 'Observability & Runtime Insight',
+    description: 'System visibility, tracing, and failure analysis',
     icon: ChartBarIcon,
     items: [
-      { name: 'Prometheus & Grafana' },
-      { name: 'Distributed Tracing (Jaeger)' },
-      { name: 'Log-Based Debugging' },
-      { name: 'System Behavior Analysis' },
-      { name: 'Metrics & Alerting Systems' },
+      'Prometheus & Grafana',
+      'Jaeger (Tracing)',
+      'Log Debugging',
+      'Metrics & Alerting',
     ],
   },
   {
-    category: 'Programming & Systems Engineering',
-    description: 'Developing backend systems and infrastructure tooling',
+    category: 'Programming & Backend Systems',
+    description: 'Building system-level services and infrastructure tooling',
     icon: CodeBracketIcon,
     items: [
-      { name: 'Go' },
-      { name: 'Python' },
-      { name: 'Java' },
-      { name: 'Bash / Shell Scripting' },
-      { name: 'REST APIs & Backend Systems' },
+      'Go',
+      'Python',
+      'Java',
+      'REST APIs',
     ],
   },
   {
-    category: 'Systems Architecture & Design',
-    description: 'Designing scalable, resilient, and observable architectures',
+    category: 'Systems Design & Architecture',
+    description: 'Designing resilient, distributed, and observable systems',
     icon: WrenchScrewdriverIcon,
     items: [
-      { name: 'Microservices Architecture' },
-      { name: 'Caching Systems (Redis)' },
-      { name: 'Observability-Driven Design' },
-      { name: 'Failure Handling & Resilience' },
-      { name: 'Distributed System Design' },
+      'Distributed Systems',
+      'Microservices',
+      'Caching (Redis)',
+      'Failure Handling',
     ],
   },
 ];
@@ -89,6 +83,8 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,46 +96,54 @@ export default function Skills() {
             Skills & Expertise
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Systems engineering across CI/CD, Kubernetes infrastructure, and kernel-level runtime security
+            Systems engineering across Kubernetes infrastructure, CI/CD pipelines, and kernel-level runtime security
           </p>
         </motion.div>
 
+        {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => {
             const Icon = skill.icon;
+
             return (
               <motion.div
                 key={skill.category}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ scale: 1.03, y: -5 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-800"
               >
+
+                {/* HEADER */}
                 <div className="flex items-center mb-4">
-                  <div className="p-2 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500">
+                  <div className="p-2 rounded-lg bg-gradient-to-r from-blue-500 to-blue-600">
                     <Icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="ml-3 text-xl font-semibold text-gray-900 dark:text-white">
+
+                  <h3 className="ml-3 text-lg font-semibold text-gray-900 dark:text-white">
                     {skill.category}
                   </h3>
                 </div>
 
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                {/* DESC */}
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                   {skill.description}
                 </p>
 
-                <ul className="space-y-2">
+                {/* ITEMS */}
+                <div className="flex flex-wrap gap-2">
                   {skill.items.map((item) => (
-                    <li
-                      key={item.name}
-                      className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300"
+                    <span
+                      key={item}
+                      className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full"
                     >
-                      <span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
-                      {item.name}
-                    </li>
+                      {item}
+                    </span>
                   ))}
-                </ul>
+                </div>
+
               </motion.div>
             );
           })}
