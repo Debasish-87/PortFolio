@@ -22,7 +22,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            An SDET and Quality Engineer specializing in Quality Intelligence for CI/CD-driven, cloud-native systems.
+            A Kubernetes Security Systems Engineer building enforcement systems for cloud-native infrastructure.
           </p>
         </motion.div>
 
@@ -55,19 +55,19 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I’m an SDET / Quality Engineer specializing in Quality Intelligence for CI/CD-driven, cloud-native systems.
+              I design systems that enforce security decisions across CI/CD pipelines and kernel-level runtime — turning signals into actions where they actually matter.
             </p>
             
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I design automation frameworks and quality platforms that transform UI, API, and pipeline execution data into actionable release confidence using risk-based testing, early defect containment, and quality gates.
+              My work spans building CI/CD governance engines that block insecure deployments, and developing eBPF-based runtime systems that intercept syscalls and terminate threats in real time.  
             </p>
             
             <p className="text-lg text-gray-600 dark:text-gray-300"> 
-              Working across Selenium, RestAssured, TestNG, Allure, GitHub Actions,  Kubernetes, and AWS, I embed quality signals directly into CI/CD pipelines — ensuring quality is engineered as a system, not validated as a final phase.
+              Working across Kubernetes, eBPF, CI/CD systems, and cloud infrastructure, I focus on embedding enforcement directly into execution paths — not just observing systems, but controlling them.  
             </p>
             
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Let’s build platforms where release confidence matters.
+              I build systems where decisions are not reported — they are enforced.
             </p>
           </motion.div>
         </div>
