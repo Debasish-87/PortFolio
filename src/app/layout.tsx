@@ -7,8 +7,9 @@ import Layout from "@/components/Layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SDET / Quality Engineer Portfolio",
-  description: "Professional portfolio showcasing cloud, DevOps, and security expertise",
+  title: "Debasish Mohanty | Kernel-Level Security Engineer (eBPF, Kubernetes)",
+  description:
+    "Building kernel-level runtime security systems using eBPF to detect and stop threats at syscall level. Also develops CI/CD enforcement platforms for Kubernetes.",
 };
 
 export default function RootLayout({
