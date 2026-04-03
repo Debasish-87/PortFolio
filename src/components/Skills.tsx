@@ -6,7 +6,8 @@ import {
   ServerIcon, 
   ShieldCheckIcon,
   CommandLineIcon,
-  WrenchScrewdriverIcon
+  WrenchScrewdriverIcon,
+  ChartBarIcon
 } from '@heroicons/react/24/outline';
 
 const skills = [
@@ -49,7 +50,7 @@ const skills = [
   {
     category: 'Runtime Observability & Systems Insight',
     description: 'Monitoring, tracing, and debugging distributed systems',
-    icon: CommandLineIcon,
+    icon: ChartBarIcon,
     items: [
       { name: 'Prometheus & Grafana' },
       { name: 'Distributed Tracing (Jaeger)' },
@@ -99,7 +100,7 @@ export default function Skills() {
             Skills & Expertise
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Comprehensive expertise in test automation, CI/CD quality engineering, and cloud-native QA platforms
+            Systems engineering across CI/CD, Kubernetes infrastructure, and kernel-level runtime security
           </p>
         </motion.div>
 
@@ -123,29 +124,22 @@ export default function Skills() {
                     {skill.category}
                   </h3>
                 </div>
+
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   {skill.description}
                 </p>
-                <div className="space-y-3">
+
+                <ul className="space-y-2">
                   {skill.items.map((item) => (
-                    <div key={item.name}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                          {item.name}
-                        </span>
-                        <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
-                          {item.level}%
-                        </span>
-                      </div>
-                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                        <div
-                          className="bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 h-2 rounded-full"
-                          style={{ width: `${item.level}%` }}
-                        ></div>
-                      </div>
-                    </div>
+                    <li
+                      key={item.name}
+                      className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      <span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+                      {item.name}
+                    </li>
                   ))}
-                </div>
+                </ul>
               </motion.div>
             );
           })}
@@ -153,4 +147,4 @@ export default function Skills() {
       </div>
     </section>
   );
-} 
+}
