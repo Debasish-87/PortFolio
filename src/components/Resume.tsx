@@ -74,7 +74,7 @@ export default function Resume() {
 
             {/* CTA */}
             <a
-              href="/resume/Debasish-Resume.pdf"
+              href="/resume/DebasishResume.pdf"
               download
               className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
