@@ -91,7 +91,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/resume/Debasish-Resume.pdf"
+              href="/resume/DebasishResume.pdf"
               download
               className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 dark:border-gray-600 text-base sm:text-lg font-medium rounded-full text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1"
             >
