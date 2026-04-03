@@ -4,45 +4,62 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'AWS Cloud DevOps Engineer (Contract / Internship)',
-    company: 'TechEazy Consulting',
-    period: 'Jun 2025 – Jul 2025',
-    location: 'Remote (India)',
+    title: 'Co-Founder & Founding Backend Infrastructure Engineer',
+    company: 'MarkOpen',
+    period: 'Jan 2026 – Present',
+    location: 'Bhubaneswar, India',
     responsibilities: [
-      'Supported CI/CD pipelines using GitHub Actions and AWS CodePipeline with focus on automation readiness and stability',
-      'Assisted in Infrastructure as Code (IaC) using Terraform and AWS CloudFormation to enable repeatable test environments',
-      'Validated deployments across AWS services (EC2, S3, IAM, Lambda, RDS) from a quality and reliability perspective',
-      'Enabled containerized application execution using Docker and Amazon ECS to support automated testing',
-      'Monitored pipeline execution, environment health, and failures using CloudWatch, CloudTrail, and ELK Stack',
-      'Collaborated with DevOps and QA teams to identify deployment risks impacting test execution and releases',
-      'Documented CI/CD workflows, environment setup, and quality checks for reuse and onboarding',
+      'Designed and built a production-grade backend and infrastructure stack handling high-concurrency workloads',
+      'Developed modular Go backend architecture (routing, middleware, caching, observability layers)',
+      'Designed REST APIs for authentication, shops, user workflows, and admin systems',
+      'Optimized PostgreSQL queries and indexing for scalable performance under load',
+      'Integrated Redis caching → reduced p95 latency from 120ms to 40ms',
+      'Implemented OpenTelemetry tracing, Prometheus metrics, and Grafana dashboards',
+      'Enabled distributed tracing (Jaeger) → reduced mean time to identify issues by ~40%',
+      'Containerized full stack using Docker and docker-compose with observability stack',
+      'Built production-ready system with health checks, graceful shutdown, and service orchestration',
+      'Designed system with failure handling and graceful degradation across services',
     ],
   },
   {
-    title: 'DevOps Automation Engineer (Contract / Internship)',
+    title: 'Cloud Infrastructure Engineer (Internship)',
+    company: 'TechEazy Consulting',
+    period: 'Jun 2025 – Dec 2025',
+    location: 'Remote (India)',
+    responsibilities: [
+      'Designed Terraform-based infrastructure provisioning (VPC, EC2, IAM, S3) for multi-environment deployments',
+      'Built CI/CD pipelines using GitHub Actions for automated dev → prod promotion',
+      'Implemented deployment validation with health checks and retry logic',
+      'Designed centralized logging pipeline with application and system logs stored in S3',
+      'Built cost-optimization mechanisms including automated EC2 shutdown workflows',
+      'Enabled environment isolation using Terraform workspaces',
+    ],
+  },
+  {
+    title: 'Cloud Infrastructure & DevOps Engineer (Internship)',
     company: 'Elevate Labs',
     period: 'May 2025 – Jun 2025',
     location: 'Remote (India)',
     responsibilities: [
-      'Developed and maintained CI/CD pipelines using GitHub Actions and Jenkins with automation integration',
-      'Deployed Dockerized applications on Kubernetes (AWS) to support QA and test execution workflows',
-      'Used Prometheus and Grafana to analyze failures and improve observability for automated runs',
-      'Assisted in validating IAM configurations and security-sensitive workflows impacting QA environments',
-      'Worked closely with developers and QA engineers to improve deployment reliability and release confidence',
-      'Participated in Agile ceremonies aligning automation, testing, and deployment timelines',
+      'Implemented Kubernetes-based canary deployments using Istio with controlled traffic splitting',
+      'Built GitOps workflows using ArgoCD for automated deployment synchronization',
+      'Designed full observability stack using Prometheus, Grafana, Loki, and Jaeger',
+      'Developed CI/CD pipelines using GitHub Actions for build, test, and deployment automation',
+      'Built self-healing infrastructure using Prometheus alerts and automated remediation',
+      'Worked across containerized systems using Docker and Kubernetes (K3s/Minikube)',
     ],
   },
   {
-    title: 'SDET / Quality Engineer',
-    company: 'Upwork',
+    title: 'Systems & CI/CD Engineer (Early Stage)',
+    company: 'Freelance / Upwork',
     period: 'Oct 2024 – Feb 2025',
-    location: 'Remote (India)',
+    location: 'Remote',
     responsibilities: [
-      'Designed CI/CD-driven automation strategies for cloud-native client applications',
-      'Built Quality Intelligence systems converting UI, API, and pipeline execution into release-readiness signals',
-      'Integrated automation frameworks with GitHub Actions, Jenkins, and GitOps workflows',
-      'Implemented risk-based testing, quality gates, and early defect containment',
-      'Partnered with clients to improve release confidence, stability, and predictability',
+      'Designed CI/CD-driven systems integrating testing, deployment, and release signals',
+      'Built early-stage decision systems converting pipeline signals into release readiness outcomes',
+      'Implemented quality gates, risk-based validation, and failure analysis mechanisms',
+      'Integrated automation systems with GitHub Actions, Jenkins, and GitOps workflows',
+      'Worked with clients to improve deployment stability and release predictability',
     ],
   },
 ];
@@ -62,8 +79,7 @@ export default function Experience() {
             Professional Experience
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Cloud DevOps and SDET experience focused on CI/CD-driven quality,
-            automation enablement, and cloud-native release confidence
+            Building systems across CI/CD, Kubernetes infrastructure, and runtime-level execution environments
           </p>
         </motion.div>
 
