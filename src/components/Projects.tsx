@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import {
   CodeBracketIcon,
-  ArrowTopRightOnSquareIcon,
 } from '@heroicons/react/24/outline';
 
 const projects = [
