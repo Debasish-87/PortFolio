@@ -10,22 +10,33 @@ const contributions = [
   {
     project: 'Falco (falcosecurity/libs)',
     description:
-      'Fixed a file descriptor leak in libscap by correcting error-path handling in scap_linux_get_threadlist.',
-    impact: 'Eliminated memory leak · Verified via Heaptrack · Merged in v0.24.0',
+      'Fixed integer overflow in thread memory calculations (VMSIZE/VMRSS) by enforcing 64-bit arithmetic during KB→bytes conversion.',
+    impact:
+      'Prevented incorrect memory reporting for >4GB processes · Eliminated overflow edge cases · Merged into v0.24.0',
+    link: 'https://github.com/falcosecurity/libs/pull/2930',
+  },
+  {
+    project: 'Falco (falcosecurity/libs)',
+    description:
+      'Resolved a file descriptor leak in libscap by correcting error-path handling in scap_linux_get_threadlist.',
+    impact:
+      'Eliminated memory leak · Verified via Heaptrack · Merged in v0.24.0',
     link: 'https://github.com/falcosecurity/libs/pull/2926',
   },
   {
     project: 'Helm (helm/helm)',
     description:
-      'Improved registry client behavior by fixing inconsistencies and strengthening implementation correctness.',
-    impact: 'Improved reliability of registry operations',
+      'Improved registry client correctness by fixing behavioral inconsistencies and strengthening edge-case handling.',
+    impact:
+      'Increased reliability of OCI registry interactions',
     link: 'https://github.com/helm/helm/pull/31973',
   },
   {
     project: 'Kubernetes (kubernetes/website)',
     description:
-      'Removed deprecated API references and improved documentation accuracy for node metrics.',
-    impact: 'Improved clarity for production users and contributors',
+      'Removed deprecated API references and corrected node metrics documentation.',
+    impact:
+      'Improved accuracy for production users and contributors',
     link: 'https://github.com/kubernetes/website/pull/54593',
   },
 ];
