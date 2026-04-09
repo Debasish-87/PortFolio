@@ -6,7 +6,7 @@ const experiences = [
   {
     title: 'Co-Founder & Founding Backend Infrastructure Engineer',
     company: 'MarkOpen',
-    period: 'Jan 2026 – Present',
+    period: 'Jan 2025 – Present',
     location: 'Bhubaneswar, India',
     highlights: [
       'Built production-grade backend systems handling concurrent workloads with focus on latency and resilience',
