@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'Co-Founder & Founding Backend Infrastructure Engineer',
+    title: ' Founding Systems Engineer (Backend Infrastructure) | Co-Founder ',
     company: 'MarkOpen',
     period: 'Jan 2025 – Present',
     location: 'Bhubaneswar, India',
