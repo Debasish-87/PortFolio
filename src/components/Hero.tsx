@@ -43,7 +43,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Cloud DevSecOps Engineer — Runtime Security & Enforcement Systems
+            Cloud DevSecOps Engineer — Runtime Security (eBPF)
           </motion.h2>
 
           {/* 🔥 STRONG POSITIONING */}
