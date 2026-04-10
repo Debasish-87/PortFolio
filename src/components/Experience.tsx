@@ -4,17 +4,17 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: ' Backend & Infrastructure Engineer ',
+    title: 'Backend & Infrastructure Engineer',
     company: 'MarkOpen',
     period: 'Jan 2025 – Present',
     location: 'Bhubaneswar, India',
     highlights: [
-      'Built high-concurrency production-grade backend systems handling concurrent workloads with focus on latency and resilience',
-      'Designed modular Go architecture (routing, middleware, caching, observability)',
-      'Reduced p95 latency from 120ms → 40ms using Redis caching and query optimization',
-      'Implemented full observability stack (OpenTelemetry, Prometheus, Grafana)',
-      'Enabled distributed tracing with Jaeger, reducing issue detection time by ~40%',
-      'Designed failure-resilient systems with graceful degradation and recovery mechanisms',
+      'Built high-concurrency Go backend systems, reducing p95 latency from 120ms → 40ms (3x improvement)',
+      'Designed modular architecture (routing, middleware, caching, observability) enabling scalable and maintainable services',
+      'Implemented Redis-based caching and query optimization to significantly improve API response times under load',
+      'Deployed full observability stack (OpenTelemetry, Prometheus, Grafana) for real-time system monitoring',
+      'Enabled distributed tracing with Jaeger, reducing issue detection and debugging time by ~40%',
+      'Designed failure-resilient systems with graceful degradation, improving system reliability under partial outages',
     ],
   },
   {

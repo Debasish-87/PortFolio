@@ -10,8 +10,9 @@ const projects = [
   {
     title: 'KubeRTSec — Kubernetes Runtime Security Platform',
     description:
-      'eBPF-powered runtime security system that intercepts execve syscalls to detect and terminate threats (reverse shells, crypto miners, container escapes) in real time.',
-    impact: 'Sub-ms syscall interception · Real-time threat termination',
+      'eBPF-powered runtime security system that intercepts execve syscalls to detect and terminate threats (reverse shells, crypto miners, container escapes) in real time, without requiring changes to application code.',
+    impact:
+      'Processes 8,000+ events/sec at <2% CPU · Detects MITRE ATT&CK techniques (T1059, T1611) · Auto-terminates threats via SIGKILL',
     technologies: [
       'Go',
       'eBPF',
