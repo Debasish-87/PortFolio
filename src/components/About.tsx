@@ -59,24 +59,27 @@ export default function About() {
             className="space-y-5"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I design systems that enforce security decisions inside CI/CD pipelines and kernel-level runtime — turning signals into real-time action where it actually matters.
+              I build systems that enforce security decisions across CI/CD pipelines and kernel-level runtime — turning signals into real-time action where it actually matters.
             </p>
 
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              My work focuses on two critical layers:
-              <br />• CI/CD Enforcement — blocking insecure deployments before they reach production  
-              <br />• Runtime Security — intercepting syscalls using eBPF to detect and terminate threats in real time
+              My work operates at two critical layers:
+              <br />• <span className="font-semibold">CI/CD Enforcement</span> — blocking insecure infrastructure before it reaches production  
+              <br />• <span className="font-semibold">Runtime Security</span> — intercepting syscalls using eBPF to detect and terminate threats in real time
             </p>
 
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Working across Kubernetes, eBPF, and distributed systems, I build platforms that operate directly within execution paths — not just observing systems, but controlling them.
+              I’ve built kernel-level security systems processing <span className="font-semibold">8,000+ events/sec at &lt;2% CPU</span>, and policy-driven DevSecOps platforms enforcing <span className="font-semibold">70+ security rules</span> across Kubernetes, Terraform, and CI/CD workflows.
+            </p>
+
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Working across Kubernetes, eBPF, and distributed systems, I design platforms that operate directly within execution paths — not just observing systems, but controlling them.
             </p>
 
             {/* 🔥 SIGNATURE LINE */}
             <p className="text-lg font-semibold text-blue-600 dark:text-blue-400">
               I don’t build monitoring systems. I build enforcement systems.
             </p>
-
           </motion.div>
         </div>
       </div>

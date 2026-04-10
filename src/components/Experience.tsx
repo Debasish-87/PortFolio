@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: ' Founding Systems Engineer (Backend Infrastructure) | Co-Founder ',
+    title: ' Backend & Infrastructure Engineer ',
     company: 'MarkOpen',
     period: 'Jan 2025 – Present',
     location: 'Bhubaneswar, India',
     highlights: [
-      'Built production-grade backend systems handling concurrent workloads with focus on latency and resilience',
+      'Built high-concurrency production-grade backend systems handling concurrent workloads with focus on latency and resilience',
       'Designed modular Go architecture (routing, middleware, caching, observability)',
       'Reduced p95 latency from 120ms → 40ms using Redis caching and query optimization',
       'Implemented full observability stack (OpenTelemetry, Prometheus, Grafana)',

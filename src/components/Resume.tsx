@@ -29,60 +29,57 @@ export default function Resume() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
         >
-          <div className="flex flex-col items-center space-y-6">
+            <div className="flex flex-col items-center space-y-6">
 
-            {/* Header */}
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
-                Kubernetes Security Systems Engineer
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                CI/CD Enforcement and Kernel-Level Runtime Security
-              </p>
-            </div>
+              {/* Header */}
+              <div className="text-center">
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Cloud DevSecOps Engineer — Runtime Security
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  eBPF-based Runtime Security · CI/CD Enforcement · Kubernetes Systems
+                </p>
+              </div>
 
-            <div className="w-full border-t border-gray-200 dark:border-gray-700 my-4"></div>
+              <div className="w-full border-t border-gray-200 dark:border-gray-700 my-4"></div>
 
-            {/* Skills Overview */}
-            <div className="grid grid-cols-2 gap-6 w-full text-left">
-
-              <div>
+              {/* 🔥 Key Highlights (HIGH SIGNAL) */}
+              <div className="w-full text-left">
                 <h4 className="font-semibold text-gray-900 dark:text-white">
-                  Core Expertise
+                  Key Highlights
                 </h4>
-                <ul className="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
-                  <li>• CI/CD Enforcement Systems</li>
-                  <li>• Runtime Security (eBPF)</li>
-                  <li>• Kubernetes Infrastructure</li>
-                  <li>• Release Governance & Decision Systems</li>
+                <ul className="mt-3 space-y-2 text-gray-600 dark:text-gray-300">
+                  <li>• Built eBPF runtime security agent processing <span className="font-semibold">8,000+ events/sec</span> at &lt;2% CPU</li>
+                  <li>• Contributed to <span className="font-semibold">Falco (CNCF)</span> — fixes merged into production (v0.24.0)</li>
+                  <li>• Designed CI/CD enforcement platform with <span className="font-semibold">70+ security rules</span></li>
+                  <li>• Detects and terminates runtime threats (reverse shells, container escapes) in real time</li>
                 </ul>
               </div>
 
-              <div>
+              {/* 🔥 Core Focus */}
+              <div className="w-full text-left">
                 <h4 className="font-semibold text-gray-900 dark:text-white">
-                  Technology Stack
+                  Core Focus
                 </h4>
                 <ul className="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
-                  <li>• Go · Python · Java</li>
-                  <li>• Kubernetes · Docker · AWS</li>
-                  <li>• GitHub Actions · Jenkins · ArgoCD</li>
-                  <li>• Prometheus · Grafana · Jaeger</li>
+                  <li>• Runtime Security (eBPF, Syscalls, Linux)</li>
+                  <li>• DevSecOps & CI/CD Enforcement</li>
+                  <li>• Kubernetes & Cloud Infrastructure</li>
+                  <li>• Distributed Systems & Observability</li>
                 </ul>
               </div>
 
+              {/* CTA */}
+              <a
+                href="/resume/DebasishResume.pdf"
+                download
+                className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <DocumentTextIcon className="h-6 w-6 mr-2" />
+                Download Resume
+              </a>
+
             </div>
-
-            {/* CTA */}
-            <a
-              href="/resume/DebasishResume.pdf"
-              download
-              className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              <DocumentTextIcon className="h-6 w-6 mr-2" />
-              Download Resume
-            </a>
-
-          </div>
         </motion.div>
       </div>
     </section>

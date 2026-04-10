@@ -10,7 +10,7 @@ const contributions = [
   {
     project: 'Falco (falcosecurity/libs)',
     description:
-      'Fixed integer overflow in thread memory calculations (VMSIZE/VMRSS) by enforcing 64-bit arithmetic during KB→bytes conversion.',
+      'Fixed critical integer overflow in Falco affecting memory accounting for 4GB+ processes (merged in v0.24.0)',
     impact:
       'Prevented incorrect memory reporting for >4GB processes · Eliminated overflow edge cases · Merged into v0.24.0',
     link: 'https://github.com/falcosecurity/libs/pull/2930',
@@ -18,7 +18,7 @@ const contributions = [
   {
     project: 'Falco (falcosecurity/libs)',
     description:
-      'Resolved a file descriptor leak in libscap by correcting error-path handling in scap_linux_get_threadlist.',
+      'Resolved file descriptor leak in libscap preventing long-running agent crashes',
     impact:
       'Eliminated memory leak · Verified via Heaptrack · Merged in v0.24.0',
     link: 'https://github.com/falcosecurity/libs/pull/2926',

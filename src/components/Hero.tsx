@@ -43,7 +43,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Kubernetes Security Systems Engineer
+            Cloud DevSecOps Engineer — Runtime Security & Enforcement Systems
           </motion.h2>
 
           {/* 🔥 STRONG POSITIONING */}
@@ -53,7 +53,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            I build systems that intercept, detect, and stop threats at the syscall level — before they execute.
+            I build systems that intercept and terminate threats at the syscall level using eBPF — enforcing security, not just observing it.
           </motion.p>
 
           {/* 🔥 CREDIBILITY */}
@@ -73,7 +73,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            eBPF · Kubernetes · Runtime Threat Detection · DevSecOps
+            eBPF Runtime Security · Syscall Interception · CI/CD Enforcement · Kubernetes · DevSecOps
           </motion.p>
 
           {/* CTA */}
