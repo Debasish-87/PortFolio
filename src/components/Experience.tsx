@@ -3,6 +3,20 @@
 import { motion } from 'framer-motion';
 
 const experiences = [
+    {
+    title: 'Open Source Engineer (CNCF Ecosystem)',
+    company: 'Cloud Native Computing Foundation (CNCF)',
+    period: 'Jan 2026 – Present',
+    location: 'Remote',
+    highlights: [
+      'Contributed to CNCF projects including Falco (runtime security), Helm, and Kubernetes',
+      'Fixed integer overflow in Falco thread memory accounting (VMSIZE/VMRSS) by enforcing 64-bit arithmetic, preventing incorrect reporting for >4GB processes :contentReference[oaicite:0]{index=0}',
+      'Resolved file descriptor leak in Falco libscap, improving reliability of syscall-level thread inspection',
+      'Improved Helm registry client correctness and developer experience by refining documentation and behavior',
+      'Enhanced Kubernetes documentation by removing deprecated API references and correcting node metrics guidance',
+      'All contributions merged into production branches after maintainer review, CI validation, and approval',
+    ],
+  },
   {
     title: 'Backend & Infrastructure Engineer',
     company: 'MarkOpen',
@@ -15,20 +29,6 @@ const experiences = [
       'Deployed full observability stack (OpenTelemetry, Prometheus, Grafana) for real-time system monitoring',
       'Enabled distributed tracing with Jaeger, reducing issue detection and debugging time by ~40%',
       'Designed failure-resilient systems with graceful degradation, improving system reliability under partial outages',
-    ],
-  },
-  {
-    title: 'Open Source Engineer (CNCF Ecosystem)',
-    company: 'Cloud Native Computing Foundation (CNCF)',
-    period: 'Jan 2026 – Present',
-    location: 'Remote',
-    highlights: [
-      'Contributed to CNCF projects including Falco (runtime security), Helm, and Kubernetes',
-      'Fixed integer overflow in Falco thread memory accounting (VMSIZE/VMRSS) by enforcing 64-bit arithmetic, preventing incorrect reporting for >4GB processes :contentReference[oaicite:0]{index=0}',
-      'Resolved file descriptor leak in Falco libscap, improving reliability of syscall-level thread inspection',
-      'Improved Helm registry client correctness and developer experience by refining documentation and behavior',
-      'Enhanced Kubernetes documentation by removing deprecated API references and correcting node metrics guidance',
-      'All contributions merged into production branches after maintainer review, CI validation, and approval',
     ],
   },
   {
