@@ -20,7 +20,7 @@ const experiences = [
   {
     title: 'Cloud Infrastructure Engineer',
     company: 'TechEazy Consulting',
-    period: 'Jun 2025 – Dec 2025',
+    period: 'Jun 2025 – July 2025',
     location: 'Remote',
     highlights: [
       'Provisioned AWS infrastructure using Terraform (VPC, EC2, IAM, S3)',
