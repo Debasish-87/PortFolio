@@ -18,20 +18,6 @@ const experiences = [
     ],
   },
   {
-    title: 'Backend & Infrastructure Engineer',
-    company: 'MarkOpen',
-    period: 'Jan 2025 – Present',
-    location: 'Bhubaneswar, India',
-    highlights: [
-      'Built high-concurrency Go backend systems, reducing p95 latency from 120ms → 40ms (3x improvement)',
-      'Designed modular architecture (routing, middleware, caching, observability) enabling scalable and maintainable services',
-      'Implemented Redis-based caching and query optimization to significantly improve API response times under load',
-      'Deployed full observability stack (OpenTelemetry, Prometheus, Grafana) for real-time system monitoring',
-      'Enabled distributed tracing with Jaeger, reducing issue detection and debugging time by ~40%',
-      'Designed failure-resilient systems with graceful degradation, improving system reliability under partial outages',
-    ],
-  },
-  {
     title: 'Cloud Infrastructure Engineer',
     company: 'TechEazy Consulting',
     period: 'Jun 2025 – Dec 2025',
