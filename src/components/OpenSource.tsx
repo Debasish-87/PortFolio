@@ -8,36 +8,44 @@ import {
 
 const contributions = [
   {
+    project: 'Kubernetes Autoscaler (kubernetes/autoscaler)',
+    description:
+      'Fixed control-plane bug where node groups ignored configured minSize, causing silent under-provisioning in production clusters.',
+    impact:
+      'Restored correct scaling behavior · Merged upstream · Backported to release branches (1.32, 1.33)',
+    link: 'https://github.com/kubernetes/autoscaler/pull/9506',
+  },
+  {
+    project: 'Kubernetes Autoscaler (VPA Helm)',
+    description:
+      'Restored missing */scale RBAC in VPA Helm chart, enabling admission controller to correctly resolve CRD selectors.',
+    impact:
+      'Unblocked autoscaling behavior in Helm-based deployments · Fixed broken control-plane interaction',
+    link: 'https://github.com/kubernetes/autoscaler/pull/9515',
+  },
+  {
     project: 'Falco (falcosecurity/libs)',
     description:
-      'Fixed critical integer overflow in Falco affecting memory accounting for 4GB+ processes (merged in v0.24.0)',
+      'Fixed integer overflow in memory telemetry (VMSIZE/VMRSS) affecting processes >4GB.',
     impact:
-      'Prevented incorrect memory reporting for >4GB processes · Eliminated overflow edge cases · Merged into v0.24.0',
+      'Restored correctness of runtime security metrics · Eliminated overflow edge cases · Merged into production releases',
     link: 'https://github.com/falcosecurity/libs/pull/2930',
   },
   {
     project: 'Falco (falcosecurity/libs)',
     description:
-      'Resolved file descriptor leak in libscap preventing long-running agent crashes',
+      'Resolved file descriptor leak in libscap by enforcing error-path cleanup in syscall-level thread inspection.',
     impact:
-      'Eliminated memory leak · Verified via Heaptrack · Merged in v0.24.0',
+      'Prevented resource leaks in long-running agents · Improved runtime stability',
     link: 'https://github.com/falcosecurity/libs/pull/2926',
   },
   {
     project: 'Helm (helm/helm)',
     description:
-      'Improved registry client correctness by fixing behavioral inconsistencies and strengthening edge-case handling.',
+      'Improved OCI registry client correctness by aligning documentation with actual authentication and request behavior.',
     impact:
-      'Increased reliability of OCI registry interactions',
+      'Reduced ambiguity in registry interactions · Improved developer reliability',
     link: 'https://github.com/helm/helm/pull/31973',
-  },
-  {
-    project: 'Kubernetes (kubernetes/website)',
-    description:
-      'Removed deprecated API references and corrected node metrics documentation.',
-    impact:
-      'Improved accuracy for production users and contributors',
-    link: 'https://github.com/kubernetes/website/pull/54593',
   },
 ];
 
