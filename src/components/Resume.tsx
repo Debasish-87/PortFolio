@@ -51,7 +51,7 @@ export default function Resume() {
                   <ul className="mt-3 space-y-2 text-gray-600 dark:text-gray-300">
                     <li>• Fixed Kubernetes Autoscaler bug causing silent under-provisioning due to ignored minSize (merged & backported)</li>
                     <li>• Restored missing RBAC in VPA Helm chart, enabling correct admission controller behavior</li>
-                    <li>• Fixed integer overflow in Falco memory telemetry (>4GB processes), restoring correctness of runtime metrics</li>
+                    <li>• Fixed integer overflow in Falco memory telemetry (&gt;4GB processes), restoring correctness of runtime metrics</li>
                     <li>• Built SmartScaler — deterministic Kubernetes autoscaling operator using multi-signal control loops</li>
                   </ul>
               </div>
