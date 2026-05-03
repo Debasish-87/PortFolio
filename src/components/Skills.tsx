@@ -9,7 +9,6 @@ import {
 } from '@heroicons/react/24/outline';
 
 const skills = [
-const skills = [
   {
     category: 'Kubernetes Control Plane',
     description: 'Designing and debugging control-plane components including autoscaling, controllers, and reconciliation loops',
