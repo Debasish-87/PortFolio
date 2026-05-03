@@ -43,7 +43,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Cloud DevSecOps Engineer — Runtime Security (eBPF)
+            Kubernetes Control Plane Engineer — Autoscaling & Distributed Systems
           </motion.h2>
 
           {/* 🔥 STRONG POSITIONING */}
@@ -53,7 +53,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            I build systems that intercept and terminate threats at the syscall level using eBPF — enforcing security, not just observing it.
+            I build control-plane systems that make decisions under real production constraints — autoscaling, scheduling behavior, and system reliability.
           </motion.p>
 
           {/* 🔥 CREDIBILITY */}
@@ -63,7 +63,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            Contributor to Falco · Helm · Kubernetes
+            Contributor to Kubernetes Autoscaler · Falco · Helm
           </motion.p>
 
           {/* 🔥 MICRO STACK SIGNAL */}
@@ -73,7 +73,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            eBPF Runtime Security · Syscall Interception · CI/CD Enforcement · Kubernetes · DevSecOps
+            Kubernetes Control Plane · Autoscaling Systems · Distributed Systems · System Reliability · Observability
           </motion.p>
 
           {/* CTA */}
