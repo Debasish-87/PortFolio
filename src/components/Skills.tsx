@@ -12,64 +12,63 @@ import {
 
 const skills = [
   {
-    category: 'Runtime Security & Systems',
-    description: 'Kernel-level security systems using eBPF for syscall interception and real-time threat enforcement',
-    icon: ShieldCheckIcon,
-    items: [
-      'eBPF',
-      'Syscall Interception',
-      'Falco',
-      'Linux Internals',
-      'Threat Detection & Termination',
-    ],
-  },
-  {
-    category: 'Cloud & Kubernetes Infrastructure',
-    description: 'Cloud-native systems, container orchestration, and infrastructure automation',
+    category: 'Kubernetes Control Plane',
+    description: 'Designing and debugging control-plane components including autoscaling, controllers, and reconciliation loops',
     icon: ServerIcon,
     items: [
-      'Kubernetes (K3s, Minikube)',
-      'Docker',
-      'Istio',
-      'Terraform',
-      'AWS',
+      'Kubernetes',
+      'CRDs & Controllers',
+      'Autoscaling',
+      'Reconciliation Loops',
+      'RBAC & Admission Control',
     ],
   },
   {
-    category: 'DevSecOps & CI/CD Enforcement',
-    description: 'Automated pipelines with embedded policy validation and security enforcement',
+    category: 'Distributed Systems',
+    description: 'Building reliable systems with failure handling, retries, and consistency guarantees',
+    icon: CodeBracketIcon,
+    items: [
+      'Distributed Systems',
+      'Retry & Backoff',
+      'Idempotency',
+      'Backpressure Handling',
+      'Fault Tolerance',
+    ],
+  },
+  {
+    category: 'Systems Debugging & Reliability',
+    description: 'Debugging production-scale systems and fixing correctness issues in control-plane and runtime behavior',
     icon: CommandLineIcon,
     items: [
-      'GitHub Actions',
-      'Jenkins',
-      'ArgoCD (GitOps)',
-      'Kyverno',
-      'Trivy',
-      'Gitleaks',
+      'Systems Debugging',
+      'Performance Analysis',
+      'Memory & Resource Management',
+      'Failure Analysis',
+      'Linux Internals',
     ],
   },
   {
-    category: 'Observability & Runtime Insight',
-    description: 'Monitoring, tracing, and debugging distributed systems in production',
+    category: 'Observability',
+    description: 'Monitoring and analyzing system behavior using metrics, logs, and tracing',
     icon: ChartBarIcon,
     items: [
       'Prometheus',
       'Grafana',
       'Jaeger',
       'OpenTelemetry',
-      'Logging & Metrics',
+      'Metrics & Logging',
     ],
   },
   {
-    category: 'Programming & Systems Engineering',
-    description: 'Building high-performance backend systems and infrastructure tooling',
+    category: 'Programming & Engineering',
+    description: 'Building backend systems and infrastructure components for cloud-native environments',
     icon: CodeBracketIcon,
     items: [
       'Go',
       'Python',
       'C',
       'REST APIs',
-      'Distributed Systems',
+      'System Design',
     ],
   },
 ];
@@ -91,7 +90,7 @@ export default function Skills() {
             Skills & Expertise
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Systems engineering across Kubernetes infrastructure, CI/CD pipelines, and kernel-level runtime security
+            Control-plane systems, autoscaling behavior, and distributed system reliability in cloud-native environments
           </p>
         </motion.div>
 
