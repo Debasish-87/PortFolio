@@ -20,7 +20,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I build enforcement systems for cloud-native infrastructure — where decisions are executed, not reported.
+            I build control-plane systems for cloud-native infrastructure — where decisions are made under real production constraints.
           </p>
         </motion.div>
 
@@ -45,7 +45,6 @@ export default function About() {
               />
             </div>
 
-            {/* Decorative blobs */}
             <div className="absolute -top-4 -right-4 w-32 h-32 bg-blue-400 rounded-full blur-xl opacity-20 animate-blob"></div>
             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400 rounded-full blur-xl opacity-20 animate-blob animation-delay-2000"></div>
           </motion.div>
@@ -59,26 +58,26 @@ export default function About() {
             className="space-y-5"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I build systems that enforce security decisions across CI/CD pipelines and kernel-level runtime — turning signals into real-time action where it actually matters.
+              My focus is system correctness: autoscaling behavior, scheduling interactions, and reliability — not just deploying infrastructure.
             </p>
 
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              My work operates at two critical layers:
-              <br />• <span className="font-semibold">CI/CD Enforcement</span> — blocking insecure infrastructure before it reaches production  
-              <br />• <span className="font-semibold">Runtime Security</span> — intercepting syscalls using eBPF to detect and terminate threats in real time
+              I’ve contributed to Kubernetes Autoscaler and Falco, fixing production-impacting bugs in scaling behavior and runtime system correctness, now merged into upstream release branches.
             </p>
 
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              I’ve built kernel-level security systems processing <span className="font-semibold">8,000+ events/sec at &lt;2% CPU</span>, and policy-driven DevSecOps platforms enforcing <span className="font-semibold">70+ security rules</span> across Kubernetes, Terraform, and CI/CD workflows.
+              I build systems that operate under real-world conditions:
             </p>
 
-            <p className="text-lg text-gray-600 dark:text-gray-300">
-              Working across Kubernetes, eBPF, and distributed systems, I design platforms that operate directly within execution paths — not just observing systems, but controlling them.
-            </p>
+            <ul className="text-lg text-gray-600 dark:text-gray-300 space-y-2 list-disc list-inside">
+              <li>Autoscaling decisions under noisy and delayed metrics</li>
+              <li>Failure handling: retries, idempotency, and backpressure</li>
+              <li>Control-plane logic using CRDs, controllers, and reconciliation loops</li>
+            </ul>
 
             {/* 🔥 SIGNATURE LINE */}
             <p className="text-lg font-semibold text-blue-600 dark:text-blue-400">
-              I don’t build monitoring systems. I build enforcement systems.
+              I build systems that behave correctly under load — not just systems that “work”.
             </p>
           </motion.div>
         </div>
