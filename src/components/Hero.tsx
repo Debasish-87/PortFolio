@@ -43,7 +43,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Kubernetes Control Plane Engineer — Autoscaling & Distributed Systems
+            Kubernetes Platform Engineer — Autoscaling & Distributed Systems
           </motion.h2>
 
           {/* 🔥 STRONG POSITIONING */}
