@@ -8,61 +8,52 @@ import {
 
 const projects = [
   {
-    title: 'KubeRTSec — Kubernetes Runtime Security Platform',
+    title: 'SmartScaler — Kubernetes Autoscaling Operator',
     description:
-      'eBPF-powered runtime security system that intercepts execve syscalls to detect and terminate threats (reverse shells, crypto miners, container escapes) in real time, without requiring changes to application code.',
+      'Kubernetes-native autoscaling operator implementing a deterministic multi-signal control loop across CPU utilization, node pressure, and cost for stable scaling decisions.',
     impact:
-      'Processes 8,000+ events/sec at <2% CPU · Detects MITRE ATT&CK techniques (T1059, T1611) · Auto-terminates threats via SIGKILL',
+      'Deterministic autoscaling · Metric smoothing & staleness filtering · Conflict-safe scaling with retries',
     technologies: [
       'Go',
-      'eBPF',
       'Kubernetes',
-      'Docker',
-      'React',
+      'CRDs',
+      'Controllers',
       'Prometheus',
-      'Grafana',
-      'Jaeger',
+      'Docker',
     ],
-    github: 'https://github.com/Debasish-87/kubertsec',
-    live: 'https://kubertsec.vercel.app/',
-    image: '/projects/kubertsec.png',
+    github: 'https://github.com/Debasish-87/smartscaler',
+    image: '/projects/smartscaler.png',
   },
   {
-    title: 'ZeroTrustOps — CI/CD Security Enforcement Platform',
+    title: 'KubeJobs — Distributed Job Processing System',
     description:
-      'Policy-driven CI/CD enforcement system that scans every commit and blocks insecure infrastructure before deployment using custom SecTL engine.',
-    impact: 'Pre-deployment security enforcement · Commit-time validation',
+      'Fault-tolerant distributed job system built on Redis Streams with reliable execution, retry semantics, and worker recovery.',
+    impact:
+      'Reliable execution under failure · Backpressure control · DLQ + retry handling',
     technologies: [
       'Go',
-      'Python',
-      'FastAPI',
-      'React',
-      'PostgreSQL',
-      'Docker',
+      'Redis Streams',
       'Kubernetes',
-      'Gitleaks',
+      'Prometheus',
+      'Docker',
     ],
-    github: 'https://github.com/Debasish-87/ZeroTrustOps-Platform',
-    live: 'https://debasish-87.github.io/ZeroTrustOps-Platform/',
-    image: '/projects/zerotrustops.png',
+    github: 'https://github.com/Debasish-87/kubejobs',
+    image: '/projects/kubejobs.png',
   },
   {
-    title: 'K3s + Istio Canary Deployment System',
+    title: 'Kubernetes Autoscaler — Control Plane Contribution',
     description:
-      'Cloud-native deployment system implementing traffic-splitting canary releases with full observability and real-time validation.',
-    impact: 'Controlled traffic shifting · Observability-driven release validation',
+      'Fixed production-impacting scaling bug in Kubernetes Autoscaler where node groups ignored configured minSize, causing silent under-provisioning.',
+    impact:
+      'Merged upstream · Backported to release branches · Restored correct scaling behavior',
     technologies: [
-      'Kubernetes (K3s)',
-      'Istio',
-      'Docker',
-      'Prometheus',
-      'Grafana',
-      'Jaeger',
-      'Kiali',
+      'Go',
+      'Kubernetes',
+      'Autoscaling',
+      'Control Plane',
     ],
-    github:
-      'https://github.com/Debasish-87/k3s-istio-canary-deployment',
-    image: '/projects/istio.png',
+    github: 'https://github.com/kubernetes/autoscaler/pull/9506',
+    image: '/projects/k8s.png',
   },
 ];
 
