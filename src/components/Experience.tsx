@@ -3,18 +3,19 @@
 import { motion } from 'framer-motion';
 
 const experiences = [
-    {
-    title: 'Open Source Engineer (CNCF Ecosystem)',
+  {
+    title: 'Open Source Engineer — Kubernetes Control Plane & Systems',
     company: 'Cloud Native Computing Foundation (CNCF)',
     period: 'Jan 2026 – Present',
     location: 'Remote',
     highlights: [
-      'Contributed to CNCF projects including Falco (runtime security), Helm, and Kubernetes',
-      'Fixed integer overflow in Falco thread memory accounting (VMSIZE/VMRSS) by enforcing 64-bit arithmetic, preventing incorrect reporting for >4GB processes :contentReference[oaicite:0]{index=0}',
-      'Resolved file descriptor leak in Falco libscap, improving reliability of syscall-level thread inspection',
-      'Improved Helm registry client correctness and developer experience by refining documentation and behavior',
-      'Enhanced Kubernetes documentation by removing deprecated API references and correcting node metrics guidance',
-      'All contributions merged into production branches after maintainer review, CI validation, and approval',
+      'Contributed to Kubernetes Autoscaler, Falco, and Helm, focusing on control-plane correctness and system reliability',
+      'Fixed Kubernetes Autoscaler bug where node groups ignored configured minSize, causing silent under-provisioning in production clusters',
+      'Restored missing */scale RBAC in VPA Helm chart, enabling admission controller to correctly resolve CRD selectors',
+      'Eliminated integer overflow in Falco memory telemetry (VMSIZE/VMRSS) using 64-bit arithmetic, restoring correctness for >4GB processes',
+      'Resolved file descriptor leak in Falco libscap by enforcing error-path cleanup, preventing resource exhaustion in long-running agents',
+      'Improved Helm OCI registry client correctness by aligning documentation with actual authentication and request behavior',
+      'All contributions merged upstream and included in production release branches after maintainer review and CI validation',
     ],
   },
   {
@@ -23,38 +24,26 @@ const experiences = [
     period: 'Jun 2025 – July 2025',
     location: 'Remote',
     highlights: [
-      'Provisioned AWS infrastructure using Terraform (VPC, EC2, IAM, S3)',
-      'Designed CI/CD pipelines enabling automated dev → production deployments',
-      'Implemented deployment validation with health checks and retry logic',
-      'Reduced cloud costs via automated EC2 lifecycle management',
-      'Enabled environment isolation using Terraform workspaces',
+      'Provisioned AWS infrastructure using Terraform (VPC, EC2, IAM, S3) with environment isolation',
+      'Designed CI/CD pipelines enabling automated dev → production deployment promotion',
+      'Implemented deployment validation using health checks and retry mechanisms',
+      'Optimized cloud costs via automated EC2 lifecycle management and scheduled shutdown systems',
+      'Managed environment-specific configurations using Terraform workspaces',
     ],
   },
   {
-    title: 'Cloud Infrastructure & DevOps Engineer',
+    title: 'Cloud Infrastructure & Platform Engineer',
     company: 'Elevate Labs',
     period: 'May 2025 – Jun 2025',
     location: 'Remote',
     highlights: [
-      'Implemented Istio-based canary deployments with traffic splitting',
-      'Built GitOps workflows using ArgoCD for automated synchronization',
-      'Designed observability stack (Prometheus, Grafana, Loki, Jaeger)',
-      'Implemented alert-driven self-healing mechanisms',
-      'Worked across Kubernetes (K3s/Minikube) and Docker environments',
+      'Implemented Istio-based canary deployments with traffic splitting and progressive rollout strategies',
+      'Built GitOps workflows using ArgoCD for automated synchronization and deployment consistency',
+      'Designed full observability stack using Prometheus, Grafana, Loki, and Jaeger',
+      'Implemented alert-driven self-healing systems using Prometheus alerts and automation scripts',
+      'Worked across containerized environments using Kubernetes (K3s/Minikube) and Docker',
     ],
   },
-  // {
-  //   title: 'Systems & CI/CD Engineer',
-  //   company: 'Freelance / Upwork',
-  //   period: 'Oct 2024 – Feb 2025',
-  //   location: 'Remote',
-  //   highlights: [
-  //     'Designed CI/CD systems integrating deployment, validation, and release signals',
-  //     'Built decision systems for release readiness and failure analysis',
-  //     'Implemented quality gates and risk-based validation pipelines',
-  //     'Improved deployment stability and release predictability for clients',
-  //   ],
-  // },
 ];
 
 export default function Experience() {
