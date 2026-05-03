@@ -4,12 +4,11 @@ import { motion } from 'framer-motion';
 import {
   CodeBracketIcon,
   ServerIcon,
-  ShieldCheckIcon,
   CommandLineIcon,
-  // WrenchScrewdriverIcon,
   ChartBarIcon,
 } from '@heroicons/react/24/outline';
 
+const skills = [
 const skills = [
   {
     category: 'Kubernetes Control Plane',
@@ -25,7 +24,7 @@ const skills = [
   },
   {
     category: 'Distributed Systems',
-    description: 'Building reliable systems with failure handling, retries, and consistency guarantees',
+    description: 'Designing systems with failure handling, retries, and consistency guarantees under real-world conditions',
     icon: CodeBracketIcon,
     items: [
       'Distributed Systems',
@@ -37,7 +36,7 @@ const skills = [
   },
   {
     category: 'Systems Debugging & Reliability',
-    description: 'Debugging production-scale systems and fixing correctness issues in control-plane and runtime behavior',
+    description: 'Debugging production-scale systems and resolving correctness issues in control-plane and runtime behavior',
     icon: CommandLineIcon,
     items: [
       'Systems Debugging',
@@ -60,8 +59,8 @@ const skills = [
     ],
   },
   {
-    category: 'Programming & Engineering',
-    description: 'Building backend systems and infrastructure components for cloud-native environments',
+    category: 'Programming & Systems Engineering',
+    description: 'Building backend systems and infrastructure components for cloud-native and distributed environments',
     icon: CodeBracketIcon,
     items: [
       'Go',
@@ -69,6 +68,18 @@ const skills = [
       'C',
       'REST APIs',
       'System Design',
+    ],
+  },
+  {
+    category: 'Autoscaling Systems',
+    description: 'Designing and implementing autoscaling strategies based on multi-signal metrics and control loops',
+    icon: ServerIcon,
+    items: [
+      'Horizontal Scaling',
+      'Metric Smoothing',
+      'Scaling Policies',
+      'Cooldown Handling',
+      'Cost-Aware Scaling',
     ],
   },
 ];
