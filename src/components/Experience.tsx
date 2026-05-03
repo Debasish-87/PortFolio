@@ -63,7 +63,7 @@ export default function Experience() {
             Professional Experience
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Building systems across Kubernetes infrastructure, CI/CD pipelines, and runtime-level execution environments
+            Building control-plane systems, autoscaling logic, and distributed infrastructure for real-world production environments
           </p>
         </motion.div>
 
