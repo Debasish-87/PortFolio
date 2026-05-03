@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import {
   CodeBracketIcon,
-  ArrowTopRightOnSquareIcon,
 } from '@heroicons/react/24/outline';
 
 const projects = [
@@ -71,10 +70,10 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Systems & Security Projects
+            Control Plane & Distributed Systems
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Production-grade systems across Kubernetes runtime security, CI/CD enforcement, and cloud-native infrastructure
+            Production-grade systems focused on autoscaling, control-plane behavior, and distributed system reliability
           </p>
         </motion.div>
 
@@ -111,12 +110,10 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                {/* 🔥 IMPACT */}
                 <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
                   {project.impact}
                 </p>
 
-                {/* TECH */}
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span
@@ -139,18 +136,6 @@ export default function Projects() {
                     <CodeBracketIcon className="h-5 w-5 mr-2" />
                     Code
                   </a>
-
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-green-600 dark:text-green-400 hover:text-green-700"
-                    >
-                      <ArrowTopRightOnSquareIcon className="h-5 w-5 mr-2" />
-                      Live
-                    </a>
-                  )}
                 </div>
 
               </div>
