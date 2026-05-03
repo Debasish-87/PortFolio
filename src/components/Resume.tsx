@@ -18,7 +18,7 @@ export default function Resume() {
             Resume
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Explore my work in CI/CD enforcement, Kubernetes infrastructure, and kernel-level runtime security systems
+            Explore my work in Kubernetes control-plane systems, autoscaling behavior, and distributed system reliability
           </p>
         </motion.div>
 
@@ -34,10 +34,10 @@ export default function Resume() {
               {/* Header */}
               <div className="text-center">
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
-                  Cloud DevSecOps Engineer — Runtime Security
+                  Kubernetes Control Plane Engineer — Autoscaling & Distributed Systems
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  eBPF-based Runtime Security · CI/CD Enforcement · Kubernetes Systems
+                  Kubernetes Autoscaling · Control Plane Systems · Distributed Systems
                 </p>
               </div>
 
@@ -48,12 +48,12 @@ export default function Resume() {
                 <h4 className="font-semibold text-gray-900 dark:text-white">
                   Key Highlights
                 </h4>
-                <ul className="mt-3 space-y-2 text-gray-600 dark:text-gray-300">
-                  <li>• Built eBPF runtime security agent processing <span className="font-semibold">8,000+ events/sec</span> at &lt;2% CPU</li>
-                  <li>• Contributed to <span className="font-semibold">Falco (CNCF)</span> — fixes merged into production (v0.24.0)</li>
-                  <li>• Designed CI/CD enforcement platform with <span className="font-semibold">70+ security rules</span></li>
-                  <li>• Detects and terminates runtime threats (reverse shells, container escapes) in real time</li>
-                </ul>
+                  <ul className="mt-3 space-y-2 text-gray-600 dark:text-gray-300">
+                    <li>• Fixed Kubernetes Autoscaler bug causing silent under-provisioning due to ignored minSize (merged & backported)</li>
+                    <li>• Restored missing RBAC in VPA Helm chart, enabling correct admission controller behavior</li>
+                    <li>• Fixed integer overflow in Falco memory telemetry (>4GB processes), restoring correctness of runtime metrics</li>
+                    <li>• Built SmartScaler — deterministic Kubernetes autoscaling operator using multi-signal control loops</li>
+                  </ul>
               </div>
 
               {/* 🔥 Core Focus */}
@@ -61,12 +61,12 @@ export default function Resume() {
                 <h4 className="font-semibold text-gray-900 dark:text-white">
                   Core Focus
                 </h4>
-                <ul className="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
-                  <li>• Runtime Security (eBPF, Syscalls, Linux)</li>
-                  <li>• DevSecOps & CI/CD Enforcement</li>
-                  <li>• Kubernetes & Cloud Infrastructure</li>
-                  <li>• Distributed Systems & Observability</li>
-                </ul>
+                  <ul className="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
+                    <li>• Kubernetes Control Plane (CRDs, controllers, autoscaling)</li>
+                    <li>• Distributed Systems (retries, backoff, idempotency, failure handling)</li>
+                    <li>• Systems Debugging & Reliability</li>
+                    <li>• Observability (metrics, logs, tracing)</li>
+                  </ul>
               </div>
 
               {/* CTA */}
